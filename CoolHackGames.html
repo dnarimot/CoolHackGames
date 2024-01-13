@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body id="body">
+
+	<h1>Search whatever cool math games you want at here!</h1>
+    <p></p>
+    <script> 
+        //used to generate game images and links
+        
+      	//this array stores the name of the image, and the description we would add next to it
+		let image_link = [
+      		["image1.jpg", "game1"],
+      		["image2.jpg", "game2"],
+      		["image3.jpg", "game3"],
+      		["image4.jpg", "game4"],
+      		["new image", "game 5"]
+      ]; 
+      
+      //create the image based on the above array
+      for (let i=0; i < image_link.length; i++) {
+          document.write('<img src="' + image_link[i][0] + '" alt="' + image_link[i][1] + '">');
+          document.write('<br>');
+      }
+	</script>
+
+</body>
+</html>
