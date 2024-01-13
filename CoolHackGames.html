@@ -23,6 +23,30 @@
     <section id="home">
         <h1>Welcome to Your Website!</h1>
         <p>This is a simple HTML template.</p>
+
+        <h1>Search whatever cool math games you want at here!</h1>
+        <script> 
+            //used to generate game images and links
+        
+      	    //this array stores the name of the image, and the description we would add next to it
+		    let image_link = [
+      		    ["image1.jpg", "game1"],
+      		    ["image2.jpg", "game2"],
+      		    ["image3.jpg", "game3"],
+      		    ["image4.jpg", "game4"],
+      		    ["new image", "game 5"]
+         ] ; 
+      
+        //create the image based on the above array
+        for (let i=0; i < image_link.length; i++) {
+            document.write(
+                // rickroll link
+                '<a href="https://youtu.be/hbT7vzCvEc8">' + 
+                '<img src="' + image_link[i][0] + '" alt="' + image_link[i][1] + '">' +
+                '</a>');
+            document.write('<br>');
+        }
+	    </script>
     </section>
 
     <!-- Example footer -->
