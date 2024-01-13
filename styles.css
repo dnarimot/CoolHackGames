@@ -15,6 +15,17 @@ header {
     padding: 1em;
 }
 
+.image-container {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+.image-subheading {
+    width: 100%; /* Adjust the width as needed */
+    text-align: center;
+}
+
 
 @keyframes rainbow {
     0% {background: #ff0000;}
