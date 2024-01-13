@@ -18,8 +18,12 @@
       
       //create the image based on the above array
       for (let i=0; i < image_link.length; i++) {
-          document.write('<img src="' + image_link[i][0] + '" alt="' + image_link[i][1] + '">');
-          document.write('<br>');
+        document.write(
+            // rickroll link
+            '<a href="https://youtu.be/hbT7vzCvEc8">' + 
+            '<img src="' + image_link[i][0] + '" alt="' + image_link[i][1] + '">' +
+            '</a>');
+        document.write('<br>');
       }
 	</script>
 
