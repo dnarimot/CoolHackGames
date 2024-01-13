@@ -46,6 +46,20 @@
 -->
 </head>
 <body>
+    <script>
+        function troll_or_not() {
+            //preturn true if decided to troll others (about 30%)
+            return Mah.random() < 0.3;
+        }
+
+        function return_link(to_troll) {
+            if (to_troll) {
+                return "trolling link";
+            }
+
+            return "normal link";
+        }
+    </script>
 
     <header>
         <h1>Cool Math Games</h1>
