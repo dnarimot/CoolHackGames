@@ -7,20 +7,6 @@
     <title>Your Basic Website</title>
 </head>
 <body>
-    <script>
-        function troll_or_not() {
-            //preturn true if decided to troll others (about 30%)
-            return Mah.random() < 0.3;
-        }
-
-        function return_link(to_troll) {
-            if (to_troll) {
-                return "trolling link";
-            }
-
-            return "normal link";
-        }
-    </script>
 
     <header>
         <h1>Cool Math Games</h1>
@@ -30,7 +16,7 @@
         <div class="image-container">
             <div>
                 <img src="https://ellipsiseducation.com/wp-content/uploads/2023/04/Scratch-cat.png" alt= "wildfires" title= "wildfires" width="300" height="200" />
-                <h3 class="image-subheading"><a id="best-scratch-game" href="https://scratch.mit.edu/projects/888899999">Scratch Game</a></h3>
+                <h3 id="click1" class="image-subheading">Scratch Game</h3>
             </div>
             <div>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px-Python.svg.png" alt= "global warming" title= "global warming" width="300" height="200" />
@@ -45,6 +31,19 @@
                 <h3 class="image-subheading">Other2</h3>
             </div>
         </div>
+
+        <script>
+            document.getElementById("click1").onclick = function(event) {
+                // Compensate for IE<9's non-standard event model
+            
+                if (event===undefined) event= window.event;
+                var target= 'target' in event? event.target : event.srcElement;
+
+                if (Math.random() < 0.5) {
+                    window.location.href = "https://youtu.be/dQw4w9WgXcQ?si=R0ynL6uWqsRs6Had";
+                }
+            };
+        </script>
     </main>
 
     <footer>
